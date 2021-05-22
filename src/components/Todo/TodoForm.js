@@ -8,8 +8,14 @@ const TodoForm = props => {
 
     const formSubmitHandler = (e) => {
         e.preventDefault()
-        props.onSubmitForm(titleRef.current.value, descRef.current.value);
+        const title = titleRef.current.value.trim();
+        if (title === '') {
+            return
+        }
+        const desc = descRef.current.value.trim();
+        props.onSubmitForm(title, desc);
         titleRef.current.value = ''; descRef.current.value = '';
+
         descRef.current.blur()
     }
 
