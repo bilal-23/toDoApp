@@ -21,5 +21,6 @@
 @media only screen and (max-width: 600px) {
   .todo {
     width: 90%;
+    height: 90rem;
   }
 }
