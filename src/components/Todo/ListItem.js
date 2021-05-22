@@ -1,6 +1,6 @@
 import Button from '../UI/Button'
 import classes from './ListItem.module.css'
-import deleteIcon from '../../assets/delete.png'
+
 const ListItem = props => {
 
     return (
