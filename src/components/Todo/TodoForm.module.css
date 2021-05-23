@@ -17,11 +17,16 @@
   outline: transparent;
   border: transparent;
   background-color: #d1d1d1;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.589);
   font-size: 2rem;
   letter-spacing: 0.4rem;
   text-decoration: none;
 }
+.form-group input::-webkit-input-placeholder {
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
 .form button {
   display: inline-block;
   align-self: flex-end;

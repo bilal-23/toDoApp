@@ -4,8 +4,8 @@
   grid-template-rows: auto;
   padding: 1.2rem 2rem;
   border-bottom: 2px solid #222;
-  margin-bottom: 1rem;
   position: relative;
+  transition: 0.5s ease;
 }
 /* .completed::after {
   content: "";
@@ -22,9 +22,7 @@
 .item-title {
   font-size: 3rem;
   font-weight: 500;
-}
-.completed .item-title {
-  text-decoration: line-through;
+  transition: 1s ease;
 }
 
 .item-desc {
@@ -40,8 +38,19 @@
   transition: 0.5s ease;
 }
 
-.item-delete:hover,
-.item-completed:hover {
+.item-delete:hover {
+  box-shadow: inset 0 0 0 3rem #303030;
+  color: white;
+}
+
+.item.completed {
+  background-color: rgba(177, 177, 177, 0.89);
+}
+.item-title.completed {
+  text-decoration: line-through;
+}
+
+.item-completed.completed {
   box-shadow: inset 0 0 0 3rem #303030;
   color: white;
 }

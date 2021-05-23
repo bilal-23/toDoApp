@@ -22,7 +22,7 @@ const TodoForm = props => {
     return <form className={classes.form} onSubmit={formSubmitHandler}>
         <div className={classes['form-group']}>
             <label>Title</label>
-            <input type='text' ref={titleRef} />
+            <input type='text' ref={titleRef} placeholder="Enter Task" />
         </div>
         <div className={classes['form-group']}>
             <label>Description</label>
